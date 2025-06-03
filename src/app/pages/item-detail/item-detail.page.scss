@@ -1,0 +1,98 @@
+/* item-detail.page.scss */
+
+ion-content {
+  --background:#43678b;
+}
+
+ion-toolbar {
+  --background: #3880ff;
+  --color: white;
+}
+
+ion-back-button {
+  --color: white;
+}
+
+ion-title {
+  font-weight: 600;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+ion-item {
+  --border-radius: 10px;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 20px;
+  --background: #f9f9f9;
+  --border-color: #e0e0e0;
+  
+  ion-label {
+    color: #3d3d3d;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .nome {
+     color: #2b2b2b;
+    font-weight: 500;
+    margin-bottom: 9px;
+  }
+  
+  ion-input, ion-textarea {
+    --background: white;
+    border-radius: 8px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    margin-top: 5px;
+  }
+}
+
+ion-button {
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(56, 128, 255, 0.3);
+  height: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  
+  &[type="submit"] {
+    --background: #3880ff;
+    --background-activated: #4d8eff;
+    --background-focused: #4d8eff;
+    --background-hover: #4d8eff;
+  }
+}
+
+/* Efeitos de foco/hover */
+ion-item.item-interactive.ion-focused,
+ion-item.item-interactive.ion-focused:hover {
+  --highlight-color-focused: #3880ff;
+  
+  ion-input, ion-textarea {
+    border-color: #3880ff;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+  form {
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  ion-button {
+    height: 45px;
+    font-size: 14px;
+  }
+}
